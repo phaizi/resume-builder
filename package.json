@@ -1,0 +1,20 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "description": "This is a web app for dynamically building downloadable and shareable resumes through forms.",
+  "main": "index.html",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaizi/resume-builder.git"
+  },
+  "author": "Faizan Mansur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phaizi/resume-builder/issues"
+  },
+  "homepage": "https://github.com/phaizi/resume-builder#readme"
+}
