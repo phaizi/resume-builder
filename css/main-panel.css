@@ -1,0 +1,18 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px var(--gap-md);
+  background-color: var(--orange-md);
+}
+
+#layout-main {
+  order: 1;
+  padding: var(--gap-sm);
+  border: solid var(--orange-lt) 1px;
+  display: grid;
+  /* grid-template-columns: min(198px) min(198px); */
+}
+
+/* grid-template-columns: minmax(198px, 264px) min(522px, 450px); */
+/* <aside class="aside"> */

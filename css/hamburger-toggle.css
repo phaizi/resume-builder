@@ -1,0 +1,38 @@
+.hamburger {
+  display: inline-block;
+  height: 5.5px;
+  position: relative;
+  padding: 16px 0px;
+  cursor: pointer;
+}
+
+.hamburger input {
+  all: unset;
+}
+
+.hamburger div {
+  width: 35px;
+  height: 5px;
+  border-radius: 5px 5px 5px 5px;
+  /* background-color: var(--black-dk); */
+  background-color: currentColor;
+  transition: all 500ms;
+}
+.line-1 {
+  position: absolute;
+  top: 6px;
+}
+.line-3 {
+  position: absolute;
+  bottom: 6px;
+}
+
+#header:has(:checked) ~ #layout-aside {
+  left: 0px;
+}
+.hamburger > input:checked ~ .line-1 {
+  top: 16px;
+}
+.hamburger > input:checked ~ .line-3 {
+  bottom: 16px;
+}

@@ -1,5 +1,0 @@
-main {
-  order: 1;
-  padding: var(--gap-sm);
-  border: solid var(--orange-lt) 1px;
-}

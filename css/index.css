@@ -46,7 +46,7 @@ body {
   #header {
     display: none !important;
   }
-  aside {
+  #layout-aside {
     display: inline-flex;
     height: auto !important;
     position: static !important;
@@ -81,7 +81,7 @@ body {
       grid-template-columns: minmax(182px, 250px) minmax(728px, auto);
       grid-template-rows: 1fr;
     }
-    aside {
+    #layout-aside {
       display: block;
       display: inline-block;
       height: 100vh !important;

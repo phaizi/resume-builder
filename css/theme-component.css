@@ -1,0 +1,54 @@
+#wrapper-themebox {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.theme-box {
+  position: relative;
+  outline: 1px solid var(--orange-disabled);
+  left: 0px;
+  top: 0px;
+  border-radius: 10% 10%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: all 100ms;
+}
+
+.theme-box-cover {
+  position: absolute;
+  border-radius: 10% 10%;
+  outline: 1px solid var(--orange-disabled);
+  left: 0px;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  transition: left 1s;
+}
+
+.theme-box:hover {
+  outline: 3px solid var(--orange-disabled);
+}
+
+#applied-box {
+  outline: 1px solid var(--orange-disabled);
+  border-radius: 10% 10%;
+  height: 30px;
+  width: 60px;
+}
+
+.box-red {
+  background-color: var(--red-md);
+}
+.box-orange {
+  background-color: var(--orange-md);
+}
+.box-green {
+  background-color: var(--green-md);
+}
+.box-blue {
+  background-color: var(--blue-md);
+}
