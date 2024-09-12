@@ -4,10 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume-Builder</title>
-    <link rel="stylesheet" href="css/resume-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/side-panel.css" />
+    <link rel="stylesheet" href="css/form.css" />
   </head>
   <body>
-    <div><h1>This is starter for Resume Builder</h1></div>
+    <header id="header">
+      <h2>Resume</h3>
+      <label class="hamburger">
+        <input type="checkbox" />
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </label>
+    </header>
+    <main>
+      <section>
+        <header>
+          <figure>
+            <img />
+            <figcaption></figcaption>
+          </figure>
+        </header>
+        <article></article>
+      </section>
+      <section>
+        <h1>Experience</h1>
+        <article>
+          <h2>Full Stack Web Developer</h2>
+        </article>
+        <article>
+          <h2>Front-End Web Developer</h2>
+        </article>
+      </section>
+      <section>
+        <h1>Projects</h1>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+      <section>
+        <h1>Contact</h1>
+      </section>
+      <section>
+        <h1>Skills</h1>
+      </section>
+      <section>
+        <h1>Education</h1>
+      </section>
+      <section>
+        <h1>Certification</h1>
+      </section>
+    </main>
+    <aside>
+      <section id="theme-section">
+        <h3>Select a theme:</h3>
+        <div id="wrapper-themebox">
+          <span
+            onclick="themeChanger('#box-red','#applied-box')"
+            class="theme-box box-red"
+          >
+            <span id="box-red" class="theme-box-cover box-red"></span>
+          </span>
+          <span
+            onclick="themeChanger('#box-orange','#applied-box')"
+            class="theme-box box-orange"
+          >
+            <span id="box-orange" class="theme-box-cover box-orange"></span>
+          </span>
+          <span
+            onclick="themeChanger('#box-blue','#applied-box')"
+            class="theme-box box-blue"
+          >
+            <span id="box-blue" class="theme-box-cover box-blue"></span>
+          </span>
+          <span
+            onclick="themeChanger('#box-green','#applied-box')"
+            class="theme-box box-green"
+          >
+            <span id="box-green" class="theme-box-cover box-green"></span>
+          </span>
+          <span class="v-line"></span>
+          <span id="applied-box"></span>
+        </div>
+      </section>
+
+      <section id="toggle-section">
+        <h3>Manage sections:</h3>
+        <div id="toggles-container">
+          <article class="toggle-wrapper">
+            Experience
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+          <article class="toggle-wrapper">
+            Projects
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+          <article class="toggle-wrapper">
+            Contact
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+          <article class="toggle-wrapper">
+            Skills
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+          <article class="toggle-wrapper">
+            Education
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+          <article class="toggle-wrapper">
+            Certification
+            <label class="switch">
+              <input type="checkbox" clicked />
+              <span class="toggle"></span>
+              <span class="toggle-mover"></span>
+            </label>
+          </article>
+        </div>
+      </section>
+    </aside>
     <script src="js/themeChanger.js"></script>
     <script src="js/toggleSections.js"></script>
   </body>

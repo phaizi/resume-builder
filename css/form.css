@@ -1,0 +1,46 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  all: unset;
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 10% 10%;
+  background-color: white;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+.toggle-mover {
+  position: absolute;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  border-radius: 10% 10%;
+  background-color: var(--orange-disabled);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .toggle {
+  background-color: white;
+}
+
+input:checked ~ .toggle-mover {
+  background-color: var(--orange-md);
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+input:hover + .toggle {
+  outline: 1px solid var(--orange-disabled);
+}
