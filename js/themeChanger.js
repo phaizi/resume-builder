@@ -19,8 +19,8 @@ const themeChanger = (sourceID, targetID) => {
         source.style.transition = "left 0s";
         const header = document.querySelector("#header");
         const appliedBox = document.querySelector("#applied-box");
-        const aside = document.querySelector("aside");
-        const main = document.querySelector("main");
+        const aside = document.querySelector("#layout-aside");
+        const main = document.querySelector("#layout-main");
         const root = document.querySelector(":root");
         const theme = sourceID.slice(5);
         const disabledColor = getComputedStyle(root).getPropertyValue(`--${theme}-disabled`);
