@@ -43,7 +43,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
-  #header {
+  #layout-header {
     display: none !important;
   }
   #layout-aside {
@@ -82,8 +82,9 @@ body {
       grid-template-rows: 1fr;
     }
     #layout-aside {
-      display: block;
       display: inline-block;
+      position: sticky !important;
+      top: 0px;
       height: 100vh !important;
       padding: var(--gap-sm);
     }

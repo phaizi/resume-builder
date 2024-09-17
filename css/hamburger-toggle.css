@@ -27,7 +27,7 @@
   bottom: 6px;
 }
 
-#header:has(:checked) ~ #layout-aside {
+#layout-header:has(:checked) ~ #layout-aside {
   left: 0px;
 }
 .hamburger > input:checked ~ .line-1 {

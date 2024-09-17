@@ -17,7 +17,7 @@ const themeChanger = (sourceID, targetID) => {
     source.style.width = "60px";
     setTimeout(() => {
         source.style.transition = "left 0s";
-        const header = document.querySelector("#header");
+        const header = document.querySelector("#layout-header");
         const appliedBox = document.querySelector("#applied-box");
         const aside = document.querySelector("#layout-aside");
         const main = document.querySelector("#layout-main");

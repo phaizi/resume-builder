@@ -22,7 +22,7 @@ const themeChanger = (sourceID: string, targetID: string): void => {
 
   setTimeout(() => {
     source.style.transition = "left 0s";
-    const header: HTMLElement = document.querySelector("#header")!;
+    const header: HTMLElement = document.querySelector("#layout-header")!;
     const appliedBox: HTMLElement = document.querySelector("#applied-box")!;
     const aside: HTMLElement = document.querySelector("#layout-aside")!;
     const main: HTMLElement = document.querySelector("#layout-main")!;

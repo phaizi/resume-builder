@@ -1,13 +1,14 @@
 #layout-aside {
   order: 0;
-  position: absolute;
-  width: 230px;
+  position: fixed;
   left: -460px;
+  width: 230px;
   height: 100vh;
   padding: var(--gap-sm);
   border-right: solid var(--black-disabled) 1px;
   background-color: var(--orange-md);
   transition: left 500ms;
+  z-index: 1;
 }
 
 #theme-section > h3 {
