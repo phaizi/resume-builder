@@ -24,22 +24,25 @@
 
 #resume-main {
   order: 0;
-  grid-template-columns: minmax(198px 264px) min(522px 450px);
+  /* display: grid; */
+  /* grid-template-columns: minmax(198px 264px) min(522px 450px); */
   max-width: 730px;
-  margin: auto;
+  /* margin: auto; */
   /* grid-template-columns: minmax(250px 264px) min(522px 450px); */
 }
 
 #resume-aside {
   order: 1;
-  display: inline-block;
-  vertical-align: top;
-  /* margin-right: var(--gap-sm); */
+  /* display: inline-block; */
+  max-width: 730px;
+  margin: auto;
+  margin-top: var(--gap-sm);
 }
 
 #profile-header {
   display: flex;
   justify-content: center;
+  margin-top: 0px;
 }
 
 #photo {

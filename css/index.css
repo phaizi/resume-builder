@@ -46,6 +46,19 @@ body {
   #layout-header {
     display: none !important;
   }
+  #resume-wrapper {
+    display: grid;
+    grid-template-columns: min(198px) auto;
+    max-width: 750px;
+    column-gap: var(--gap-md);
+    margin: auto;
+  }
+  #resume-main {
+    order: 1 !important;
+  }
+  #resume-aside {
+    order: 0 !important;
+  }
   #layout-aside {
     display: inline-flex;
     height: auto !important;
@@ -74,41 +87,41 @@ body {
   .toggle-wrapper ~ * {
     margin-bottom: var(--gap-sm);
   }
+}
 
-  @media (min-width: 912px) {
-    body {
-      /* grid-template-columns: minmax(166px, 250px) minmax(728px, auto); */
-      grid-template-columns: minmax(182px, 250px) minmax(728px, auto);
-      grid-template-rows: 1fr;
-    }
-    #layout-aside {
-      display: inline-block;
-      position: sticky !important;
-      top: 0px;
-      height: 100vh !important;
-      padding: var(--gap-sm);
-    }
-    #theme-section {
-      margin-right: 0px;
-    }
-    #theme-section > h3 {
-      margin: var(--gap-md) 0px !important;
-    }
-    #toggle-section > h3 {
-      margin: var(--gap-md) 0px !important;
-    }
-    #wrapper-themebox {
-      min-width: auto;
-    }
-    .toggle-wrapper {
-      display: flex !important;
-      justify-content: space-between !important;
-      gap: 0px !important;
-      width: 250px !important;
-    }
-    .toggle-wrapper ~ * {
-      margin-bottom: 0px;
-      margin-top: var(--gap-md) !important;
-    }
+@media (min-width: 912px) {
+  body {
+    /* grid-template-columns: minmax(166px, 250px) minmax(728px, auto); */
+    grid-template-columns: minmax(182px, 250px) minmax(728px, auto);
+    grid-template-rows: 1fr;
+  }
+  #layout-aside {
+    display: inline-block;
+    position: sticky !important;
+    top: 0px;
+    height: 100vh !important;
+    padding: var(--gap-sm);
+  }
+  #theme-section {
+    margin-right: 0px;
+  }
+  #theme-section > h3 {
+    margin: var(--gap-md) 0px !important;
+  }
+  #toggle-section > h3 {
+    margin: var(--gap-md) 0px !important;
+  }
+  #wrapper-themebox {
+    min-width: auto;
+  }
+  .toggle-wrapper {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 0px !important;
+    width: 250px !important;
+  }
+  .toggle-wrapper ~ * {
+    margin-bottom: 0px;
+    margin-top: var(--gap-md) !important;
   }
 }
