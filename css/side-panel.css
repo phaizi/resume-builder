@@ -6,7 +6,8 @@
   height: 100vh;
   padding: var(--gap-sm);
   border-right: solid var(--black-disabled) 1px;
-  background-color: var(--orange-md);
+  background: linear-gradient(100deg, var(--orange-dk) -50%, var(--orange-md));
+  color: white;
   transition: left 500ms;
   z-index: 1;
 }

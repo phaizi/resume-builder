@@ -9,7 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px var(--gap-md);
-  background-color: var(--orange-md);
+  background: linear-gradient(100deg, var(--orange-dk) -50%, var(--orange-md));
+  color: white;
   z-index: 1;
 }
 

@@ -20,20 +20,47 @@ const themeChanger = (sourceID: string, targetID: string): void => {
   source.style.left = `${left}px`;
   source.style.width = "60px";
 
+  // timeout is set to make theme changes to take effect after the animation
   setTimeout(() => {
     source.style.transition = "left 0s";
     const header: HTMLElement = document.querySelector("#layout-header")!;
     const appliedBox: HTMLElement = document.querySelector("#applied-box")!;
     const aside: HTMLElement = document.querySelector("#layout-aside")!;
     const main: HTMLElement = document.querySelector("#layout-main")!;
+
+    const photo: HTMLImageElement = document.querySelector("#photo")!;
+    const locationImg: HTMLImageElement =
+      document.querySelector("#location-img")!;
+    const telImg: HTMLImageElement = document.querySelector("#tel-img")!;
+    const emailImg: HTMLImageElement = document.querySelector("#email-img")!;
+    const linkedinImg: HTMLImageElement =
+      document.querySelector("#linkedin-img")!;
+    const gitImg: HTMLImageElement = document.querySelector("#git-img")!;
+
+    const sectionHeadingsArray: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".section-heading");
+    const headingsArray: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".heading");
+    const bgCirclesArray: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".bgcircle");
+    const smCirclesArray: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".smcircle");
+    const circlesDisabledArray: NodeListOf<HTMLElement> =
+      document.querySelectorAll(".clr-disabled");
+
+    // getting theme-colors
     const root = document.querySelector(":root")!;
+    const rootStyles = getComputedStyle(root);
     const theme: string = sourceID.slice(5);
-    const disabledColor: string = getComputedStyle(root).getPropertyValue(
+    const themeColor: string = getComputedStyle(source).backgroundColor;
+    const darkThemeColor: string = rootStyles.getPropertyValue(`--${theme}-dk`);
+    const lightThemeColor: string = rootStyles.getPropertyValue(
+      `--${theme}-lt`
+    );
+    const disabledColor: string = rootStyles.getPropertyValue(
       `--${theme}-disabled`
     );
-    const themeBlack: string =
-      getComputedStyle(root).getPropertyValue("--black-dk");
-    const themeColor: string = getComputedStyle(source).backgroundColor;
+
     const toggleList = document.querySelectorAll<HTMLInputElement>(
       '.switch > input[type="checkbox"]'
     );
@@ -55,11 +82,33 @@ const themeChanger = (sourceID: string, targetID: string): void => {
     });
 
     // applying theme color
-    header.style.backgroundColor = themeColor;
-    header.style.color = theme === "red" ? "white" : themeBlack;
+    locationImg.src = `static/${theme}/location.png`;
+    telImg.src = `static/${theme}/tel.png`;
+    emailImg.src = `static/${theme}/email.png`;
+    linkedinImg.src = `static/${theme}/linkedin.png`;
+    gitImg.src = `static/${theme}/git.png`;
+    sectionHeadingsArray.forEach((element) => {
+      element.style.backgroundColor = darkThemeColor;
+    });
+    headingsArray.forEach((element) => {
+      element.style.color = darkThemeColor;
+    });
+    bgCirclesArray.forEach((element) => {
+      element.style.backgroundColor = themeColor;
+      element.style.borderColor = lightThemeColor;
+    });
+    smCirclesArray.forEach((element) => {
+      element.style.backgroundColor = darkThemeColor;
+    });
+    circlesDisabledArray.forEach((element) => {
+      element.style.backgroundColor = disabledColor;
+    });
+    photo.style.filter = `drop-shadow(0px 0px 4px ${darkThemeColor})`;
+    header.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;
+    // header.style.color = "white";
     appliedBox.style.backgroundColor = themeColor;
-    aside.style.backgroundColor = themeColor;
-    aside.style.color = theme === "red" ? "white" : themeBlack;
+    aside.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;
+    aside.style.color = "white";
     main.style.borderColor = themeColor;
 
     // reverting source element back to its original position
