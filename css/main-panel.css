@@ -24,7 +24,7 @@
 }
 
 #resume-main {
-  order: 0;
+  /* order: 0; */
   /* display: grid; */
   /* grid-template-columns: minmax(198px 264px) min(522px 450px); */
   max-width: 730px;
@@ -33,7 +33,7 @@
 }
 
 #resume-aside {
-  order: 1;
+  /* order: 1; */
   /* display: inline-block; */
   max-width: 730px;
   margin: auto;

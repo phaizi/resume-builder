@@ -36,6 +36,16 @@ body {
   font-family: "SUSE", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+.order0 {
+  order: 1 !important;
+}
+.order1 {
+  order: 2 !important;
+}
+
 /* Media queries */
 /* @media (min-width: 666px) { */
 @media (min-width: 701px) {
@@ -54,10 +64,10 @@ body {
     margin: auto;
   }
   #resume-main {
-    order: 1 !important;
+    order: 1;
   }
   #resume-aside {
-    order: 0 !important;
+    order: 0;
   }
   #layout-aside {
     display: inline-flex;
