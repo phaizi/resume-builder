@@ -43,7 +43,8 @@
 #profile-header {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
+  margin: 0px 0px var(--gap-sm);
+  /* margin: 0px; */
 }
 
 #photo {
