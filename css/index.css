@@ -1,0 +1,47 @@
+/* Colors */
+:root {
+  --orange-dk: #ea580c;
+  --orange-md: #fb923c;
+  --orange-lt: #fdba74;
+  --orange-disabled: #ffedd5;
+  --blue-dk: #0369a1;
+  --blue-md: #0ea5e9;
+  --blue-lt: #7dd3fc;
+  --blue-disabled: #e0f2fe;
+  --green-dk: #065f46;
+  --green-md: #10b981;
+  --green-lt: #6ee7b7;
+  --green-disabled: #d1fae5;
+  --red-dk: #991b1b;
+  --red-md: #dc2626;
+  --red-lt: #f87171;
+  --red-disabled: #fee2e2;
+  --black-dk: #262626;
+  --black-md: #525252;
+  --black-lt: #a3a3a3;
+  --black-disabled: #e5e5e5;
+
+  /* Spacing */
+  --gap-xs: 6px;
+  --gap-sm: 10px;
+  --gap-md: 20px;
+  --gap-lg: 30px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  column-gap: var(--gap-xs);
+  color: var(--black-dk);
+  font-family: "SUSE", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+.order0 {
+  order: 0 !important;
+}
+.order1 {
+  order: 1 !important;
+}
