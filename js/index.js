@@ -36,11 +36,11 @@ function addAllListeners() {
         });
     });
     // Adding event listeners for theme-boxes
-    const themeBoxes = document.querySelectorAll(".theme-box");
+    const themeBoxes = document.querySelectorAll(".theme-box-cover");
     themeBoxes.forEach((themeBox) => {
         themeBox.addEventListener("click", () => {
-            if (themeBox.firstElementChild?.id) {
-                themeChanger(themeBox.firstElementChild.id);
+            if (themeBox.id) {
+                themeChanger(themeBox.id);
             }
             else {
                 console.log("theme-box id is undefined");

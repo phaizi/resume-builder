@@ -19,7 +19,7 @@
 
 <body>
   <header id="layout-header">
-    <h2>Resume</h3>
+    <h2>Resume Builder</h3>
       <label class="hamburger">
         <input type="checkbox" />
         <div class="line-1"></div>
@@ -27,442 +27,80 @@
         <div class="line-3"></div>
       </label>
   </header>
-  <main id="layout-main">
-    <div id="resume-wrapper">
-    <main id="resume-main">
-      <section id="header-container">
-        <header>
-          <figure id="profile-header">
-            <img id="photo" src="static/pic.png" alt="photo" />
-            <div id="title">
-              <span id="fname">Faizan</span>
-              <span id="lname">Mansur</span>
-              <div class="heading">
-                Full-Stack Web Developer
+  <!-- <main id="layout-main" class="hidden"> -->
+  <main id="layout-main" class="full-height">
+    <div id="resume-wrapper" class="hidden">
+      <main id="resume-main">
+        <section id="header-container">
+          <header>
+            <figure id="profile-header">
+              <img id="photo" src="" alt="photo" />
+              <div id="title">
+                <span id="fname"></span>
+                <span id="lname"></span>
+                <div id="professional-statement" class="heading">
+                </div>
               </div>
-            </div>
-          </figure>
-        </header>
-        <article class="section key-text"> As a dynamic individual who followed his passion, I leveraged my
-          accounting background to excel in the rapidly-evolving field of
-          information technology. During my two years at PIAIC, I competed
-          with computer science graduates from across Karachi, consistently
-          outperforming the competition by topping in three out of four
-          semesters. This success led to an opportunity at an American
-          startup, where I quickly became a key figure, progressing from
-          front-end to back-end role.</article>
-      </section>
+            </figure>
+          </header>
+          <article class="section key-text"> </article>
+        </section>
         <section id="experience" class="section">
           <div class="section-heading">
             <!-- <span class="section-heading"> -->
             Experience
             <!-- </span> -->
           </div>
-          <article>
-            <!-- <div class="items"> -->
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">Full Stack Web Developer</span>
-            </div>
-            <div class="key-text">
-              Impala Energy Inc - Seattle(Washington) - Remote
-            </div>
-            <div class="trivial-text">May 2022 - Jan 2023</div>
-            <div class="key-text">
-              Responisibilities:
-              <ol class="trivial-text">
-                <li>Developing REST APIs on Flask Restful.</li>
-                <li>
-                  Deploying Flask server on Digital Ocean through Nginx and
-                  UWSGI.
-                </li>
-                <li>Deploying Postgresql Database on Digital Ocean.</li>
-                <li>Integrating Stripe on both backend and frontend.</li>
-                <li>Integrating Google and Microsoft sign-in with our app.</li>
-                <li>Integrating Google drive and One drive.</li>
-                <li>Designing the UI and converting into React components.</li>
-                <li>Creating redux states, redux flows and sagas.</li>
-                <li>Integrating APIs from frontend.</li>
-              </ol>
-            </div>
-          </article>
-          <article>
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">Front-End Web Developer</span>
-            </div>
-            <div class="key-text">
-              Impala Energy Inc - Seattle(Washington) - Remote
-            </div>
-            <div class="trivial-text">Jan 2022 - May 2022</div>
-            <div class="key-text">
-              Responisibilities:
-              <ol class="trivial-text">
-                <li>Designing the UI and converting into React components.</li>
-                <li>Creating redux states, redux flows and sagas.</li>
-                <li>Integrating APIs from frontend.</li>
-              </ol>
-            </div>
-          </article>
+
         </section>
         <section id="projects" class="section">
           <div class="section-heading">
             Projects
           </div>
-          <article>
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">E-Commerce Store</span>
-            </div>
-            <div class="key-text">
-              Web | Reactjs | React-router 6beta | Materialui | Fully Responsive
-            </div>
-            <a href="https://shoestore-faizan.surge.sh/">
-              https://shoestore-faizan.surge.sh/
-            </a>
-            <div class="key-text">
-              Core Functionalities:
-              <ol class="trivial-text">
-                <li>
-                  Fetching products through API calls and listing as cards with
-                  pagination.
-                </li>
-                <li>Displaying product details using dynamic routes.</li>
-                <li>
-                  Adding to cart option from different sections of the app to
-                  increase accessibility.
-                </li>
-                <li>
-                  Custom made slider to display different items in limited
-                  space.
-                </li>
-                <li>Displaying the new arrival on the home page.</li>
-              </ol>
-            </div>
-          </article>
-          <article>
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">Weather-App</span>
-            </div>
-            <div class="key-text">
-              Web | Reactjs | React-router 6beta | Materialui | Fully Responsive
-            </div>
-            <a href="https://weather-faizan.netlify.app/">
-              https://weather-faizan.netlify.app/
-            </a>
-            <div class="key-text">
-              Core Functionalities:
-              <ol class="trivial-text">
-                <li>
-                  Fetches and displays weather data for cities, from
-                  openweathermap.org's API, serving three different categories
-                  of data.
-                </li>
-                <li>
-                  3 different tabs having seperate routes for displaying Today,
-                  Hourly and Daily weather forecasts.
-                </li>
-                <li>
-                  Each route is a dynamic route providing name for the city.
-                </li>
-              </ol>
-            </div>
-          </article>
-          <article>
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">Quiz Web App</span>
-            </div>
-            <div class="key-text">
-              Web | Typescript | Reactjs | Ant design | Fully Responsive |
-              Netlify
-            </div>
-            <a href="https://quizapp-faizan.netlify.app/">
-              https://quizapp-faizan.netlify.app/
-            </a>
-            <div class="key-text">
-              Core Functionalities includes:
-              <ol class="trivial-text">
-                <li>Fetching content from API.</li>
-                <li>
-                  Setting up category of quiz, difficulty level, No of questions
-                  and timer.
-                </li>
-                <li>Timer.</li>
-                <!-- <br/>
-                <br/>
-                <br/> -->
-                <li>Three Lifelines to be used during quiz.</li>
-              </ol>
-            </div>
-          </article>
-          <article>
-            <div class="heading-container">
-              <span class="smcircle"></span>
-              <span class="heading">Covid Tracker Web App</span>
-            </div>
-            <div class="key-text">
-              Web | Reactjs | Materialui | Chartjs | Fully Responsive | Surge
-            </div>
-            <a href="https://covid_tracker_faizan.surge.sh/">
-              https://covid_tracker_faizan.surge.sh/
-            </a>
-            <div class="key-text">
-              Core Functionalities includes
-              <ol class="trivial-text">
-                <li>
-                  Fetching content through API calls & Displaying Global and
-                  individual Countries Covid cases stats.
-                </li>
-                <li>Displaying stats through beautiful responsive Charts.</li>
-                <li>Search country feature.</li>
-              </ol>
-            </div>
-          </article>
-          <article></article>
-          <article></article>
+
         </section>
-    </main>
-    <aside id="resume-aside">
-      <section id="contact" class="section">
-        <div class="section-heading">
-          Contact
-        </div>
-        <div class="key-text">
-          <ul class="contact-list">
-            <li>
-              <img id="location-img"src="static/orange/location.png" alt="location" class="icon" />
-              <span>Karachi, Pakistan</span>
-            </li>
-            <li>
-              <img id="tel-img" src="static/orange/tel.png" alt="telephone" class="icon" />
-              <span>+923412607432</span>
-            </li>
-            <li>
-              <img id="email-img" src="static/orange/email.png" alt="email" class="icon" />
-              <span>phezee7@gmail.com</span>
-            </li>
-            <li>
-              <img id="linkedin-img" src="static/orange/linkedin.png" alt="linkedin" class="icon" />
-              <span>www.linkedin.com/in/faizanmansur</span>
-            </li>
-            <li>
-              <img id="git-img" src="static/orange/git.png" alt="git" class="icon" />
-              <span id="gitlink">github.com/phaizi</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="skills" class="section">
-        <div class="section-heading">
-          Skills
-        </div>
-        <div class="key-text">
-          <ul id="skills-grid">
+      </main>
+      <aside id="resume-aside">
+        <section id="contact" class="section">
+          <div class="section-heading">
+            Contact
+          </div>
+          <div class="key-text">
+            <ul class="contact-list">
+            </ul>
+          </div>
+        </section>
+        <section id="skills" class="section">
+          <div class="section-heading">
+            Skills
+          </div>
+          <div class="key-text">
+            <ul id="skills-grid">
 
-            <li>React/Redux</li>
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-            <span>very good</span>
+            </ul>
+          </div>
+        </section>
 
-            <li>Javascript/Typescript</li>
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>very good</span>
-
-            <li>CSS/html</li>
-            <span>
-
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-
-            <span></span>
-
-            <span>good</span>
-
-            <li>Python</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>good</span>
-
-            <li>Flask Restful</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>good</span>
-
-            <li>Nodejs/Express </li>
-            <span>
-
-
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>good</span>
-
-            <li>MongoDB</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>average</span>
-
-            <li>SQL</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>average</span>
-
-            <li>Deep Learning</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>good</span>
-
-            <li>Tensorflow</li>
-
-            <span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle"></span>
-              <span class="bgcircle clr-disabled"></span>
-              <span class="bgcircle clr-disabled"></span>
-            </span>
-            <span></span>
-
-            <span>good</span>
-
+        <section id="certifications" class="section">
+          <div class="section-heading">
+            Certifications
+          </div>
+          <ul class="qualification-list">
 
           </ul>
-        </div>
-      </section>
+          <!-- </div> -->
+        </section>
+        <section id="education" class="section">
+          <div class="section-heading">
+            Education
+          </div>
+          <ul class="qualification-list">
 
-      <section id="certifications" class="section">
-        <div  class="section-heading">
-          Certifications
-        </div>
-        <ul class="qualification-list">
-          <li>
-            React - The Complete Guide (incl Hooks, React Router, Redux)
-          </li>
-          <div class="trivial-text">- Udemy</div>
-          <li>High Fidelity Designs with Material-UI and ReactJS</li>
-          <div class="trivial-text">- Udemy</div>
-          <li>
-            Backend Web Development using JavaScript, Node.js & Express
-          </li>
-          <!-- <div class="trivial-text">- DevTown</div> -->
-          <div class="trivial-text">- Google</div>
-          <!-- <div class="trivial-text">- Microsoft</div> -->
-          <li>Artificial Intelligence</li>
-          <div class="trivial-text">- PIAIC</div>
-          <li>Database Design & Basic SQL in PostgreSQL</li>
-          <div class="trivial-text">- University of Michigan</div>
-          <li>CAF(1 paper left)</li>
-          <div class="trivial-text">
-            - Institute of Chartered Accountants of Pakistan
-          </div>
-          <li>AFC</li>
-          <div class="trivial-text">
-            - Institute of Chartered Accountants of Pakistan
-          </div>
-        </ul>
-        <!-- </div> -->
-      </section>
-      <section id="education" class="section">
-        <div class="section-heading">
-          Education
-        </div>
-        <ul class="qualification-list">
-          <li>Bachelor of Commerce - Auditing & Income Tax</li>
-          <div class="trivial-text">- Govt. Premier College No.2</div>
-          <li>Higher Secondary Certificate - Pre-Engineering</li>
-          <div class="trivial-text">
-            - Govt. Degree College Gulshan-e-Iqbal
-          </div>
-          <li>Secondary School Certificate - CS</li>
-          <div class="trivial-text">- The Paradise School</div>
-        </ul>
-        <!-- </div> -->
-        <!-- <div class="items">
-            <div class="skills">
-              Bachelor of Commerce - Auditing & Income Tax
-            </div>
-            <div class="skills">Govt. Premier College No.2</div>
-          </div>
-          <div class="items">
-            <div class="skills">
-              Higher Secondary Certificate - Pre-Engineering
-            </div>
-            <div class="skills">Govt. Degree College Gulshan-e-Iqbal</div>
-          </div>
-          <div class="items">
-            <div class="skills">
-              Secondary School Certificate - CS
-            </div>
-            <div class="skills">The Paradise School</div>
-          </div> -->
-      </section>
-    </aside>
-  </div>
+          </ul>
+
+        </section>
+      </aside>
+    </div>
   </main>
   <aside id="layout-aside">
     <section id="theme-section">

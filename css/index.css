@@ -37,7 +37,10 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+.full-height {
+  min-height: calc(100vh - 119px);
 }
 .order0 {
   order: 0 !important;

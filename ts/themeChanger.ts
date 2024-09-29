@@ -47,14 +47,15 @@ function applyTheme(theme: string): void {
   const aside: HTMLElement = document.querySelector("#layout-aside")!;
   const main: HTMLElement = document.querySelector("#layout-main")!;
 
-  const photo: HTMLImageElement = document.querySelector("#photo")!;
-  const locationImg: HTMLImageElement =
-    document.querySelector("#location-img")!;
-  const telImg: HTMLImageElement = document.querySelector("#tel-img")!;
-  const emailImg: HTMLImageElement = document.querySelector("#email-img")!;
-  const linkedinImg: HTMLImageElement =
-    document.querySelector("#linkedin-img")!;
-  const gitImg: HTMLImageElement = document.querySelector("#git-img")!;
+  const photo: HTMLImageElement | null = document.querySelector("#photo");
+  const locationImg: HTMLImageElement | null =
+    document.querySelector("#location-img");
+  const telImg: HTMLImageElement | null = document.querySelector("#tel-img");
+  const emailImg: HTMLImageElement | null =
+    document.querySelector("#email-img");
+  const linkedinImg: HTMLImageElement | null =
+    document.querySelector("#linkedin-img");
+  const gitImg: HTMLImageElement | null = document.querySelector("#git-img");
 
   const sectionHeadingsArray: NodeListOf<HTMLElement> =
     document.querySelectorAll(".section-heading");
@@ -84,11 +85,21 @@ function applyTheme(theme: string): void {
     document.querySelectorAll<HTMLElement>(".toggle-mover");
 
   // applying theme color
-  locationImg.src = `static/${theme}/location.png`;
-  telImg.src = `static/${theme}/tel.png`;
-  emailImg.src = `static/${theme}/email.png`;
-  linkedinImg.src = `static/${theme}/linkedin.png`;
-  gitImg.src = `static/${theme}/git.png`;
+  if (locationImg) {
+    locationImg.src = `static/${theme}/location.png`;
+  }
+  if (telImg) {
+    telImg.src = `static/${theme}/tel.png`;
+  }
+  if (emailImg) {
+    emailImg.src = `static/${theme}/email.png`;
+  }
+  if (linkedinImg) {
+    linkedinImg.src = `static/${theme}/linkedin.png`;
+  }
+  if (gitImg) {
+    gitImg.src = `static/${theme}/git.png`;
+  }
   sectionHeadingsArray.forEach((element) => {
     element.style.backgroundColor = darkThemeColor;
   });
@@ -105,7 +116,9 @@ function applyTheme(theme: string): void {
   circlesDisabledArray.forEach((element) => {
     element.style.backgroundColor = disabledColor;
   });
-  photo.style.filter = `drop-shadow(0px 0px 4px ${darkThemeColor})`;
+  if (photo) {
+    photo.style.filter = `drop-shadow(0px 0px 4px ${darkThemeColor})`;
+  }
   header.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;
   appliedBox.style.backgroundColor = themeColor;
   aside.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;

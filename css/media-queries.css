@@ -5,6 +5,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
   }
+  .full-height {
+    min-height: calc(100vh - 215px);
+  }
   #layout-header {
     display: none;
   }
@@ -68,7 +71,8 @@
     display: inline-block;
     position: sticky;
     top: 0px;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: calc(100vh - 36px);
     padding: var(--gap-sm);
   }
   #theme-section {

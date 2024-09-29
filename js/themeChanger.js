@@ -57,11 +57,21 @@ function applyTheme(theme) {
     const toggleList = document.querySelectorAll('.switch > input[type="checkbox"]');
     const toggleMoverList = document.querySelectorAll(".toggle-mover");
     // applying theme color
-    locationImg.src = `static/${theme}/location.png`;
-    telImg.src = `static/${theme}/tel.png`;
-    emailImg.src = `static/${theme}/email.png`;
-    linkedinImg.src = `static/${theme}/linkedin.png`;
-    gitImg.src = `static/${theme}/git.png`;
+    if (locationImg) {
+        locationImg.src = `static/${theme}/location.png`;
+    }
+    if (telImg) {
+        telImg.src = `static/${theme}/tel.png`;
+    }
+    if (emailImg) {
+        emailImg.src = `static/${theme}/email.png`;
+    }
+    if (linkedinImg) {
+        linkedinImg.src = `static/${theme}/linkedin.png`;
+    }
+    if (gitImg) {
+        gitImg.src = `static/${theme}/git.png`;
+    }
     sectionHeadingsArray.forEach((element) => {
         element.style.backgroundColor = darkThemeColor;
     });
@@ -78,7 +88,9 @@ function applyTheme(theme) {
     circlesDisabledArray.forEach((element) => {
         element.style.backgroundColor = disabledColor;
     });
-    photo.style.filter = `drop-shadow(0px 0px 4px ${darkThemeColor})`;
+    if (photo) {
+        photo.style.filter = `drop-shadow(0px 0px 4px ${darkThemeColor})`;
+    }
     header.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;
     appliedBox.style.backgroundColor = themeColor;
     aside.style.background = `linear-gradient(100deg, ${darkThemeColor} -50%, ${themeColor})`;
