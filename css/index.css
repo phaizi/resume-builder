@@ -34,6 +34,7 @@ body {
   column-gap: var(--gap-xs);
   color: var(--black-dk);
   font-family: "SUSE", sans-serif;
+  margin: 0px;
 }
 
 .hidden {

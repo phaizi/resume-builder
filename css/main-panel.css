@@ -2,9 +2,9 @@
   display: flex;
   position: sticky;
   top: 0;
-  margin-top: -9px;
+  /* margin-top: -9px; */
   /* to cancel out parent's padding */
-  border-top: solid white 9px;
+  /* border-top: solid white 9px; */
   /* to move header downward and make its white border overlap the parent's colored border lines that were displayed while scrolling */
   justify-content: space-between;
   align-items: center;

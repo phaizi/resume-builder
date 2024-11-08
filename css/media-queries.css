@@ -4,6 +4,7 @@
   body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    margin: 8px;
   }
   .full-height {
     min-height: calc(100vh - 215px);
